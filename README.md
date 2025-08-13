@@ -31,7 +31,8 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 ⚙️ Como usar
 
 📂 Estrutura do repositório
-Git clone https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
+Git clone: https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
+
 Explore os arquivos Queries.sql.xlsx na pasta queries.sql para ver as consultas completas.
 
 Importe e execute as queries no seu banco de dados (PostgreSQL ou outro compatível).
