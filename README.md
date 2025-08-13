@@ -31,7 +31,7 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 
 ## 📝 Exemplos de Queries
 
-### 1. Gênero dos leads
+### 1. 🧑‍🤝‍🧑 Gênero dos leads
 
 ```sql
 SELECT
@@ -44,10 +44,9 @@ FROM sales.customers AS cus
 LEFT JOIN temp_tables.ibge_genders AS ibge
   ON lower(cus.first_name) = lower(ibge.first_name)
 GROUP BY ibge.gender;
-2. Status profissional dos leads
-sql
-Copiar
-Editar
+---
+```sql
+### 2. 💼 Status profissional dos leads
 SELECT
   CASE
     WHEN professional_status = 'freelancer' THEN 'freelancer'
