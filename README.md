@@ -28,7 +28,7 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 - Junções entre tabelas para enriquecer os dados.
 
 ---
-⚙️ Como usar
+## ⚙️ Como usar
 
 📂 Estrutura do repositório
 Git clone: https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
@@ -46,6 +46,8 @@ Sinta-se à vontade para abrir issues ou entrar em contato:
 **Lucas Diagone**
 
 (https://www.linkedin.com/in/lucas-diagone-691285104/) | (https://github.com/LucasDiagone)
+
+
 
 ## 📝 Exemplos de Queries
 
