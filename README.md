@@ -29,22 +29,13 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 
 ---
 ⚙️ Como usar
-
-git clone https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
-Explore os arquivos .sql na pasta queries/ para ver as consultas completas.
+📂 Estrutura do repositório
+Git clone https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
+Explore os arquivos Queries.sql.xlsx na pasta queries.sql para ver as consultas completas.
 
 Importe e execute as queries no seu banco de dados (PostgreSQL ou outro compatível).
 
 Adapte as consultas conforme seus estudos ou projetos.
-
-📂 Estrutura do repositório
-
-/queries
-  genero_leads.sql
-  status_profissional_leads.sql
-  veiculos_mais_visitados.sql
-  receita_leads_conversao.sql
-README.md
 
 📬 Contato
 Sinta-se à vontade para abrir issues ou entrar em contato:
