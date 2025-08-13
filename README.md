@@ -39,7 +39,8 @@ Importe e execute as queries no seu banco de dados (PostgreSQL ou outro compatí
 
 Adapte as consultas conforme seus estudos ou projetos.
 
-📬 Contato
+## 📬 Contato
+
 Sinta-se à vontade para abrir issues ou entrar em contato:
 
 **Lucas Diagone**
