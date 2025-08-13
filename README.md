@@ -29,9 +29,7 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 
 ---
 ⚙️ Como usar
-bash
-Copiar
-Editar
+
 git clone https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
 Explore os arquivos .sql na pasta queries/ para ver as consultas completas.
 
@@ -40,9 +38,7 @@ Importe e execute as queries no seu banco de dados (PostgreSQL ou outro compatí
 Adapte as consultas conforme seus estudos ou projetos.
 
 📂 Estrutura do repositório
-pgsql
-Copiar
-Editar
+
 /queries
   genero_leads.sql
   status_profissional_leads.sql
