@@ -31,6 +31,8 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 
 ## 📝 Exemplos de Queries
 
+## 📝 Exemplos de Queries
+
 ### 1. 🧑‍🤝‍🧑 Gênero dos leads
 
 ```sql
@@ -44,9 +46,10 @@ FROM sales.customers AS cus
 LEFT JOIN temp_tables.ibge_genders AS ibge
   ON lower(cus.first_name) = lower(ibge.first_name)
 GROUP BY ibge.gender;
----
-```sql
-### 2. 💼 Status profissional dos leads
+2. 💼 Status profissional dos leads
+sql
+Copiar
+Editar
 SELECT
   CASE
     WHEN professional_status = 'freelancer' THEN 'freelancer'
@@ -61,7 +64,7 @@ SELECT
   (COUNT(*)::float) / (SELECT COUNT(*) FROM sales.customers) AS "leads (%)"
 FROM sales.customers
 GROUP BY professional_status;
-3. Veículos mais visitados por marca
+3. 🚗 Veículos mais visitados por marca
 sql
 Copiar
 Editar
@@ -74,7 +77,7 @@ LEFT JOIN sales.products AS pro
   ON fun.product_id = pro.product_id
 GROUP BY pro.brand, pro.model
 ORDER BY pro.brand, pro.model, "visitas (#)";
-4. Receita, leads, conversão e ticket médio mês a mês
+4. 📊 Receita, leads, conversão e ticket médio mês a mês
 sql
 Copiar
 Editar
