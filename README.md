@@ -28,7 +28,34 @@ São queries com diferentes níveis de complexidade, aplicando funções de agre
 - Junções entre tabelas para enriquecer os dados.
 
 ---
+⚙️ Como usar
+bash
+Copiar
+Editar
+git clone https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
+Explore os arquivos .sql na pasta queries/ para ver as consultas completas.
 
+Importe e execute as queries no seu banco de dados (PostgreSQL ou outro compatível).
+
+Adapte as consultas conforme seus estudos ou projetos.
+
+📂 Estrutura do repositório
+pgsql
+Copiar
+Editar
+/queries
+  genero_leads.sql
+  status_profissional_leads.sql
+  veiculos_mais_visitados.sql
+  receita_leads_conversao.sql
+README.md
+
+📬 Contato
+Sinta-se à vontade para abrir issues ou entrar em contato:
+
+**Lucas Diagone**
+
+(https://www.linkedin.com/in/lucas-diagone-691285104/) | (https://github.com/LucasDiagone)
 ## 📝 Exemplos de Queries
 
 ## 📝 Exemplos de Queries
@@ -46,6 +73,7 @@ FROM sales.customers AS cus
 LEFT JOIN temp_tables.ibge_genders AS ibge
   ON lower(cus.first_name) = lower(ibge.first_name)
 GROUP BY ibge.gender;
+
 2. 💼 Status profissional dos leads
 sql
 Copiar
@@ -64,6 +92,7 @@ SELECT
   (COUNT(*)::float) / (SELECT COUNT(*) FROM sales.customers) AS "leads (%)"
 FROM sales.customers
 GROUP BY professional_status;
+
 3. 🚗 Veículos mais visitados por marca
 sql
 Copiar
@@ -77,6 +106,7 @@ LEFT JOIN sales.products AS pro
   ON fun.product_id = pro.product_id
 GROUP BY pro.brand, pro.model
 ORDER BY pro.brand, pro.model, "visitas (#)";
+
 4. 📊 Receita, leads, conversão e ticket médio mês a mês
 sql
 Copiar
@@ -111,32 +141,5 @@ SELECT
 FROM leads
 LEFT JOIN payments
   ON leads.visit_page_month = payments.paid_month;
-⚙️ Como usar
-bash
-Copiar
-Editar
-git clone https://github.com/LucasDiagone/SQL-Examples-Portfolio.git
-Explore os arquivos .sql na pasta queries/ para ver as consultas completas.
 
-Importe e execute as queries no seu banco de dados (PostgreSQL ou outro compatível).
-
-Adapte as consultas conforme seus estudos ou projetos.
-
-📂 Estrutura do repositório
-pgsql
-Copiar
-Editar
-/queries
-  genero_leads.sql
-  status_profissional_leads.sql
-  veiculos_mais_visitados.sql
-  receita_leads_conversao.sql
-README.md
-
-📬 Contato
-Sinta-se à vontade para abrir issues ou entrar em contato:
-
-**Lucas Diagone**
-
-(https://www.linkedin.com/in/lucas-diagone-691285104/) | (https://github.com/LucasDiagone)
 
