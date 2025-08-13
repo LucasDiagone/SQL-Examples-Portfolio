@@ -56,7 +56,6 @@ Sinta-se à vontade para abrir issues ou entrar em contato:
 **Lucas Diagone**
 
 (https://www.linkedin.com/in/lucas-diagone-691285104/) | (https://github.com/LucasDiagone)
-## 📝 Exemplos de Queries
 
 ## 📝 Exemplos de Queries
 
@@ -73,6 +72,7 @@ FROM sales.customers AS cus
 LEFT JOIN temp_tables.ibge_genders AS ibge
   ON lower(cus.first_name) = lower(ibge.first_name)
 GROUP BY ibge.gender;
+
 
 2. 💼 Status profissional dos leads
 sql
@@ -93,6 +93,7 @@ SELECT
 FROM sales.customers
 GROUP BY professional_status;
 
+
 3. 🚗 Veículos mais visitados por marca
 sql
 Copiar
@@ -106,6 +107,7 @@ LEFT JOIN sales.products AS pro
   ON fun.product_id = pro.product_id
 GROUP BY pro.brand, pro.model
 ORDER BY pro.brand, pro.model, "visitas (#)";
+
 
 4. 📊 Receita, leads, conversão e ticket médio mês a mês
 sql
